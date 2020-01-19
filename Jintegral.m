@@ -4,7 +4,7 @@ clear
 
 load 'dic'
 notch = [247, 455];             % notch of the specimen
-frames = 40;                    % required instances
+frames = 10;                    % required instances
 warning('off', 'all')
 
 % Material props & initial params
@@ -139,7 +139,7 @@ end
 
 % plotting the K1 and K2 evaluated from the J integral
 figure, plot( Kj )
-xlabel('Frames'), ylabel('SIF (MPa s^{1/2}')
+xlabel('Frames'), ylabel('SIF (MPa s^{1/2})')
 
 % plotting the contour chosen for the J integral
 figure, contourf( e22, 100 ), hold on, contour( P ), axis equal
